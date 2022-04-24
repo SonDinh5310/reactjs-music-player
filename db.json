@@ -1,0 +1,95 @@
+{
+    "songs": [
+        {
+            "name": "Sing me to sleep",
+            "author": "Alan Walker",
+            "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741533789224960/Alan_Walker_-_Sing_Me_To_SleepMP3_160K.mp3",
+            "id": 0,
+            "images": "https://i.scdn.co/image/ab6761610000e5ebc02d416c309a68b04dc94576"
+        },
+        {
+            "name": "Fade-NCS Release",
+            "author": "Alan Walker",
+            "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741536591806484/Alan_Walker_-_Fade_NCS_ReleaseMP3_160K.mp3",
+            "id": 1,
+            "images": "https://i.scdn.co/image/ab6761610000e5ebc02d416c309a68b04dc94576"
+        },
+        {
+            "name": "She-NCS Release",
+            "author": "Andromedik",
+            "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741544149549096/Andromedik_-_SHE_NCS_ReleaseMP3_160K.mp3",
+            "id": 2,
+            "images": "https://i.scdn.co/image/ab6761610000e5eb37db62ee361f796bef5b49a6"
+        },
+        {
+            "name": "About you-NCS Release",
+            "author": "Ascence",
+            "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741547203002389/Ascence_-_About_You_NCS_ReleaseMP3_160K.mp3",
+            "id": 3,
+            "images": "https://i.scdn.co/image/ab6761610000e5eb6e50f29c671af8aff68b321d"
+        },
+        {
+            "name": "On & On (feat. Daniel Levi) [NCS Release]",
+            "author": "Cartoon",
+            "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741549177995264/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3",
+            "id": 4,
+            "images": "https://i.scdn.co/image/ab6761610000e5eb65d82d90b55b4dd3cbb2efd2"
+        },
+        {
+            "name": "Castle [NCS Release]",
+            "author": "Clarx & Harddope",
+            "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741580619284540/Clarx___Harddope_-_Castle_NCS_ReleaseMP3_160K.mp3",
+            "id": 5,
+            "images": "https://i.scdn.co/image/ab6761610000e5eb015af0621865cd5cd5046c2c"
+        },
+        {
+            "name": "Invincible [NCS Release]",
+            "author": "DEAF KEV ",
+            "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741667210035220/DEAF_KEV_-_Invincible_NCS_ReleaseMP3_160K.mp3",
+            "id": 6,
+            "images": "https://i.scdn.co/image/ab6761610000e5eb33b1cf2b7b544840b727865b"
+        },
+        {
+            "name": " Blank [NCS Release]",
+            "author": "Disfigure",
+            "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741669588205598/Disfigure_-_Blank_NCS_ReleaseMP3_160K.mp3",
+            "id": 7,
+            "images": "https://i.scdn.co/image/ab6761610000e5eb2aa26cfdf3b785f171a4795c"
+        },
+        {
+            "name": "Nekozilla [NCS Release]",
+            "author": "Different Heaven",
+            "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741669626085426/Different_Heaven_-_Nekozilla_NCS_ReleaseMP3_160K.mp3",
+            "id": 8,
+            "images": "https://i.scdn.co/image/ab6761610000e5eb2af8bbb74cb106ac91d31c9a"
+        },
+        {
+            "name": "Savannah (feat. Philly K) [NCS Release]",
+            "author": "Diviners",
+            "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741669626085426/Different_Heaven_-_Nekozilla_NCS_ReleaseMP3_160K.mp3",
+            "id": 9,
+            "images": "https://i.scdn.co/image/ab6761610000e5eb2d530c07b6c9f629e3327175"
+        },
+        {
+            "name": "Cloud 9 [NCS Release]",
+            "author": "Itro & Tobu",
+            "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741836018974740/Itro___Tobu_-_Cloud_9_NCS_ReleaseMP3_160K.mp3",
+            "id": 10,
+            "images": "https://i.scdn.co/image/ab6761610000e5eb90533dd45388e25202c8de48"
+        },
+        {
+            "name": "Sky High [NCS Release]",
+            "author": "Elektronomia",
+            "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741836152668201/Elektronomia_-_Sky_High_NCS_ReleaseMP3_160K.mp3",
+            "id": 11,
+            "images": "https://i.scdn.co/image/ab6761610000e5ebbd83cf91e7780f4b0a4f0687"
+        },
+        {
+            "name": "Where'd You Go (feat. Luna Lark) [NCS Release]",
+            "author": "Julius Dreisig",
+            "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741837642170382/Julius_Dreisig_-_Where_d_You_Go_feat._Luna_LarkMP3_160K.mp3",
+            "id": 12,
+            "images": "https://i.scdn.co/image/ab6761610000e5eb942bc92abc325c9352527759"
+        }
+    ]
+}
