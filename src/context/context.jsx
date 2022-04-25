@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState } from 'react';
 
 export const AppContext = createContext();
 
@@ -6,7 +6,7 @@ const Context = ({ children }) => {
     const [currentSong, setCurrentSong] = useState(null);
 
     return (
-        <AppContext.Provider value={currentSong}>
+        <AppContext.Provider value={{ currentSong, setCurrentSong }}>
             {children}
         </AppContext.Provider>
     );
