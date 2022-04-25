@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function MusicList({ songs }) {
     return (
@@ -14,7 +14,7 @@ function MusicList({ songs }) {
                 {songs.map((song, index) => {
                     const { id, name, author } = song;
                     return (
-                        <tr key={id} className="">
+                        <tr key={id}>
                             <td className="text-center">{index}</td>
                             <td className="text-center">{name}</td>
                             <td className="text-center">{author}</td>
