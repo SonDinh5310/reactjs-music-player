@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import NavBar from "./components/NavBar";
 import useFetch from "./hooks/useFetch/useFetch";
 
@@ -8,6 +8,10 @@ import Loading from "./components/Loading";
 
 function App() {
     const { data, isLoading } = useFetch("http://localhost:8888/songs");
+    const [currentSongIndex, setCurrentSongIndex] = useState(0);
+    const handleChangeIndex = (index) => {
+        setCurrentSongIndex(index);
+    };
     console.log(data);
     return (
         <>
@@ -15,8 +19,14 @@ function App() {
             {isLoading && <Loading />}
             {data && !isLoading && (
                 <>
-                    <MusicList songs={data} className="w-full" />
-                    <MusicPlayer />
+                    <MusicList
+                        songs={data}
+                        handleChangeIndex={handleChangeIndex}
+                        className="w-full"
+                    />
+                    <MusicPlayer
+                        props={{ data, currentSongIndex, handleChangeIndex }}
+                    />
                 </>
             )}
         </>

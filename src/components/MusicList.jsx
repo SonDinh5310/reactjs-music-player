@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
-import { AppContext } from '../context/context';
+import React, { useContext } from "react";
+import { AppContext } from "../context/context";
 
-function MusicList({ songs }) {
+function MusicList({ songs, handleChangeIndex }) {
     const { setCurrentSong } = useContext(AppContext);
 
     return (
@@ -20,7 +20,7 @@ function MusicList({ songs }) {
                         <tr
                             key={id}
                             className="cursor-pointer"
-                            onClick={() => setCurrentSong(url)}
+                            onClick={() => handleChangeIndex(index)}
                         >
                             <td className="text-center">{index}</td>
                             <td className="text-center">{name}</td>
