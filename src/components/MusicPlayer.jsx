@@ -1,25 +1,37 @@
-import React, { useContext } from "react";
-import AudioPlayer from "react-h5-audio-player";
-import "react-h5-audio-player/lib/styles.css";
-import { AppContext } from "../context/context";
+import React from 'react';
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 
 function MusicPlayer({ props }) {
-    const { currentSong } = useContext(AppContext);
     const { currentSongIndex, data, handleChangeIndex } = props;
     const handleOnEnded = () => {
-        if (currentSongIndex < data.length) {
+        if (currentSongIndex < data.length - 1) {
             handleChangeIndex(currentSongIndex + 1);
             return;
         }
         handleChangeIndex(0);
     };
+    const handleClickNext = () => {
+        if (currentSongIndex < data.length - 1) {
+            handleChangeIndex(currentSongIndex + 1);
+            return;
+        }
+        handleChangeIndex(0);
+    };
+    const handleClickPrev = () => {
+        if (currentSongIndex > 1) {
+            handleChangeIndex(currentSongIndex - 1);
+            return;
+        }
+    };
     return (
         <AudioPlayer
-            className="fixed bottom-0"
             showSkipControls
             showFilledVolume
-            src={data[currentSongIndex].url}
+            src={data[currentSongIndex]?.url}
             onEnded={handleOnEnded}
+            onClickNext={handleClickNext}
+            onClickPrevious={handleClickPrev}
         />
     );
 }

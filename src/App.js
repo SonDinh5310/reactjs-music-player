@@ -1,35 +1,41 @@
-import React, { useRef, useState } from "react";
-import NavBar from "./components/NavBar";
-import useFetch from "./hooks/useFetch/useFetch";
+import React, { useState } from 'react';
+import useFetch from './hooks/useFetch/useFetch';
 
-import MusicList from "./components/MusicList";
-import MusicPlayer from "./components/MusicPlayer";
-import Loading from "./components/Loading";
+import NavBar from './components/NavBar';
+import MusicList from './components/MusicList';
+import MusicPlayer from './components/MusicPlayer';
+import NowPlaying from './components/NowPlaying';
+import Loading from './components/Loading';
 
 function App() {
-    const { data, isLoading } = useFetch("http://localhost:8888/songs");
-    const [currentSongIndex, setCurrentSongIndex] = useState(0);
+    const { data, isLoading } = useFetch('http://localhost:8888/songs');
+    const [currentSongIndex, setCurrentSongIndex] = useState(null);
     const handleChangeIndex = (index) => {
         setCurrentSongIndex(index);
     };
-    console.log(data);
+
     return (
-        <>
+        <div className="flex flex-col h-screen justify-between bg-slate-500">
             <NavBar></NavBar>
-            {isLoading && <Loading />}
+            {isLoading && <Loading className="w-full" />}
             {data && !isLoading && (
                 <>
-                    <MusicList
-                        songs={data}
-                        handleChangeIndex={handleChangeIndex}
-                        className="w-full"
-                    />
+                    <div className="flex flex-row justify-between h-full">
+                        <NowPlaying
+                            data={data}
+                            currentSongIndex={currentSongIndex}
+                        />
+                        <MusicList
+                            songs={data}
+                            handleChangeIndex={handleChangeIndex}
+                        />
+                    </div>
                     <MusicPlayer
                         props={{ data, currentSongIndex, handleChangeIndex }}
                     />
                 </>
             )}
-        </>
+        </div>
     );
 }
 

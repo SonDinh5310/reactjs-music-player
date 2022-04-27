@@ -1,31 +1,29 @@
-import React, { useContext } from "react";
-import { AppContext } from "../context/context";
+import React from 'react';
+import MusicItem from './MusicItem';
 
 function MusicList({ songs, handleChangeIndex }) {
-    const { setCurrentSong } = useContext(AppContext);
-
     return (
-        <table className="table-auto w-1/3 mx-auto">
-            <thead>
+        <table className="table-auto overflow-scroll">
+            <thead className="bg-slate-700 border-b-2">
                 <tr>
-                    <th>#</th>
-                    <th>Song</th>
-                    <th>Author</th>
+                    <th className="text-white py-3">#</th>
+                    <th className="text-left text-white py-3">Song</th>
+                    <th className="text-white py-3">Author</th>
                 </tr>
             </thead>
             <tbody>
                 {songs.map((song, index) => {
-                    const { id, name, author, url } = song;
+                    const { id, name, author } = song;
                     return (
-                        <tr
+                        <MusicItem
                             key={id}
-                            className="cursor-pointer"
-                            onClick={() => handleChangeIndex(index)}
-                        >
-                            <td className="text-center">{index}</td>
-                            <td className="text-center">{name}</td>
-                            <td className="text-center">{author}</td>
-                        </tr>
+                            props={{
+                                name,
+                                author,
+                                index,
+                                handleChangeIndex,
+                            }}
+                        />
                     );
                 })}
             </tbody>

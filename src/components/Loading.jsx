@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 function Loading() {
     return (
-        <div>
-            <p>Loading...</p>
+        <div className="w-full mt-20">
+            <p className="text-center text-2xl">Loading...</p>
         </div>
     );
 }
